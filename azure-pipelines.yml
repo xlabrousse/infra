@@ -13,8 +13,8 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    ConnectedServiceName: 'Guerbet InfraHub Dev'
-    subscriptionName: 'Guerbet InfraHub Dev'
+    azureResourceManagerConnection: 'Guerbet InfraHub Dev(1c8c2031-6f47-4c95-bd1e-b8722d6647e8)'
+    subscriptionId: '1c8c2031-6f47-4c95-bd1e-b8722d6647e8'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'GBT-RG-WE-Hub-Dev-01'
     location: 'West Europe'
